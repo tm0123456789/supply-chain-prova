@@ -37,7 +37,8 @@ contract SupplyChain {
     mapping(uint32 => uint32[]) public productTrack; //ownership by product_id
 
     // event sets up the transfer of ownership of a product
-    event TransferOwnership(uint32 productId);
+    // indexed parameters makes events easily searchable in the blockchain
+    event TransferOwnership(uint32 indexed productId);
 
     function addParticipant(
         string memory _name,
