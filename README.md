@@ -13,3 +13,10 @@ truffle console
 truffle create test SupplyChain
 truffle test
 ```
+
+#### deployment
+
+```powershell
+truffle compile --all --network goerli
+truffle deploy --network goerli --reset
+```
